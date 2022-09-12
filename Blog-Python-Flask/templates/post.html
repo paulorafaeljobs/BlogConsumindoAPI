@@ -1,0 +1,10 @@
+{% include 'includes/header.html' %}
+    {% for linha in post %}
+        <div style="width: 60%;margin:auto;">
+           <img style="width: 100%;" src="{{ linha.banner }}">
+           <h1>{{ linha.title }}</h1>  
+           <div>{{ linha.subtitle }}</div>  
+           <div>{{ linha.contents|safe }}</div> 
+        </div>
+    {% endfor %}
+{% include 'includes/footer.html' %}
